@@ -1,0 +1,77 @@
+# Node.js
+node_modules/
+.npmrc
+.env
+.env.local
+.env.development
+.env.production
+.env.test
+
+# Optional: If you use a package-lock.json or yarn.lock, you might want to include them
+# package-lock.json
+# yarn.lock
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# Diagnostic files
+*.stackdump
+*.tsb
+*.prof
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Editor and IDE files
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+
+# Deployment targets
+/dist
+/build
+/out
+
+# Optional: If you have specific build artifacts or temporary files you want to ignore
+# example:
+# my-project/temp/
+# *.tmp
+
+# Sensitive information -  Never commit these!
+# .env files are already covered above, but just to reiterate
+# config.js  (or any file containing API keys, passwords, etc.)
+
+# Optional: If you use Docker
+# docker-compose.override.yml
+
+# Optional: If you use other package managers like pnpm
+# .pnpm-store
+
+# Optional: If you use a test coverage tool
+coverage/
+.nyc_output
+.rpt
+
+# Optional: If you use a CI/CD tool
+.circleci/
+.gitlab-ci.yml
+.travis.yml
+.github/workflows/  (For GitHub Actions)
+
+# Optional: If you use a specific framework or library, check its documentation for recommended .gitignore entries.
+
+package.json
+package-lock.json
+# OR for yarn:
+# yarn.lock
+# OR for pnpm:
+# pnpm-lock.yaml

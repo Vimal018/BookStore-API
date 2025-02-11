@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  </head>
+<body>
+    <nav>
+        <div id="auth-links"></div>
+    </nav>
+
+    <div class="dashboard-content">
+        <h1>Welcome to the Dashboard</h1>
+
+        <div class="book-management">
+            <h2>Book Management</h2>
+            <ul id="book-list"></ul> <input type="text" id="isbn-input" placeholder="ISBN">
+            <input type="text" id="title-input" placeholder="Title">
+            <input type="text" id="author-input" placeholder="Author">
+            <button id="add-book-button" class="styled-button">Add Book</button>
+            <button id="modify-book-button" class="styled-button">Modify Book</button>
+            <button id="delete-book-button" class="styled-button">Delete Book</button>
+        </div>
+
+        <div class="review-management">
+            <h2>Review Management</h2>
+            <input type="text" id="review-isbn-input" placeholder="ISBN">
+            <textarea id="review-text-input" placeholder="Review"></textarea>
+            <button id="add-review-button" class="styled-button">Add Review</button>
+            <button id="delete-review-button" class="styled-button">Delete Review</button>
+        </div>
+
+        <div class="user-management">
+            <h2>User Management</h2>
+            <ul id="user-list"></ul>
+        </div>
+    </div>
+
+
+    <script src="dashboard.js"></script>
+</body>
+</html>

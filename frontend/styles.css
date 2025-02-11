@@ -1,0 +1,245 @@
+#registration-form, #login-form {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+/* Add more styles as needed */
+#registration-form label,
+#login-form label {
+    display: block; /* Makes labels stack above inputs */
+    margin-bottom: 5px;
+}
+
+#registration-form input,
+#login-form input,
+#login-form button,
+#registration-form button {
+    width: calc(100% - 12px); /* Full width - borders/padding */
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box; /* Include padding/border in width */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#login-form button,
+#registration-form button {
+    background-color: #007bff; /* Example: Blue button */
+    color: white;
+    cursor: pointer;
+}
+
+/* Basic Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 30%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Basic Form Styles */
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: calc(100% - 12px);
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s ease; /* Smooth border color transition */
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    border-color: #007bff; /* Highlight border on focus */
+    outline: none; /* Remove default outline */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.2); /* Add a subtle focus shadow */
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #007bff; /* Example button color */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker color on hover */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle hover shadow */
+}
+
+nav {
+    background-color: #f0f0f0;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between; /* Align items to left and right */
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    margin: 0 10px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transitions */
+}
+
+nav a:hover {
+    background-color: lightblue;
+    color: #007bff; /* Change color on hover */
+}
+
+/* Logout Button Styling */
+#auth-links {
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Vertically center items */
+}
+
+#logout-link {
+    margin-left: auto; /* Push logout to the right */
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: #dc3545; /* Red background for logout */
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+}
+
+#logout-link:hover {
+    background-color: #c12a36; /* Darker red on hover */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Add a subtle hover shadow */
+}
+
+/* ... (Your existing modal and navbar styles) ... */
+
+/* Dashboard Content Styles */
+.dashboard-content {
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+    align-items: center; /* Center horizontally */
+    padding: 20px;
+    min-height: calc(100vh - 60px); /* Ensure content takes up full viewport height */
+}
+
+.book-management,
+.review-management,
+.user-management {
+    width: 80%; /* Adjust width for responsiveness */
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9; /* Light background color */
+}
+
+h1, h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+textarea {
+    width: calc(100% - 12px);
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.styled-button {
+    padding: 10px 15px;
+    background-color: #007bff; /* Blue button */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-right: 10px; /* Add spacing between buttons */
+}
+
+.styled-button:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .book-management,
+    .review-management,
+    .user-management {
+        width: 95%; /* Make sections wider on smaller screens */
+        padding: 10px; /* Reduce padding */
+    }
+
+    .styled-button {
+        margin-right: 5px; /* Reduce spacing */
+        font-size: 0.9rem; /* Slightly smaller font */
+    }
+}
+nav {
+    /* ... other styles ... */
+    display: flex;
+    justify-content: space-between; /* This is key for right alignment */
+    align-items: center;
+}
+
+#auth-links {
+    display: flex; /* Needed for flexbox alignment inside nav */
+    align-items: center; /* Vertically center items */
+    margin-left: auto; /* Push links to the right */
+}
+
+#logout-link {
+    /* ... other styles ... */
+    margin-left: 10px; /* Add some space between other nav items and logout */
+}
